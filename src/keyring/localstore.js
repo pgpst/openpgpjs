@@ -34,7 +34,7 @@ function LocalStore(prefix) {
   if (typeof window != 'undefined' && window.localStorage) {
     this.storage = window.localStorage;
   } else {
-    this.storage = new (require('node-localstorage').LocalStorage)(config.node_store);
+    this.storage = new (require('universal-localstorage').LocalStorage)(config.node_store);
   }
 }
 

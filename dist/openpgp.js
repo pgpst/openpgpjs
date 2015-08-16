@@ -11631,7 +11631,7 @@ function LocalStore(prefix) {
   if (typeof window != 'undefined' && window.localStorage) {
     this.storage = window.localStorage;
   } else {
-    this.storage = new (require('node-localstorage').LocalStorage)(config.node_store);
+    this.storage = new (require('universal-localstorage').LocalStorage)(config.node_store);
   }
 }
 
@@ -11700,7 +11700,7 @@ function storeKeys(storage, itemname, keys) {
   storage.setItem(itemname, JSON.stringify(armoredKeys));
 }
 
-},{"../config":17,"../key.js":45,"../util.js":74,"node-localstorage":false}],49:[function(require,module,exports){
+},{"../config":17,"../key.js":45,"../util.js":74}],49:[function(require,module,exports){
 // GPG4Browsers - An OpenPGP implementation in javascript
 // Copyright (C) 2011 Recurity Labs GmbH
 //

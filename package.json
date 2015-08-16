@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "es6-promise": "^1.0.0",
-    "node-localstorage": "~0.3.4",
+    "universal-localstorage": "git+ssh://git@github.com:eddiemoore/universal-localstorage.git",
     "zlibjs": "^0.2.0"
   },
   "repository": {
